@@ -26,4 +26,10 @@ git_repository(
     tag = "0.1.0",
 )
 
-
+# this http archive should be updated to a new release
+http_archive(
+    name = "io_bazel_rules_docker",
+    url = "https://github.com/bazelbuild/rules_docker/archive/v0.5.1.tar.gz",
+    strip_prefix = "rules_docker-0.5.1",
+    sha256 = "29d109605e0d6f9c892584f07275b8c9260803bf0c6fcb7de2623b2bedc910bd",
+)
