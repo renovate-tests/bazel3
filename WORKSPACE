@@ -19,4 +19,11 @@ go_repository(
     importpath = "github.com/prometheus/prometheus",
 )
 
+# should find a new semantic git tag
+git_repository(
+    name = "build_bazel_rules_nodejs",
+    remote = "https://github.com/bazelbuild/rules_nodejs.git",
+    tag = "0.1.0",
+)
+
 
